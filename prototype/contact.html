@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>prototype</title>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link href="css/contact.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="title flex">
+			<div>
+				<a href="home.html"><img src="images/logo.svg" alt=""></a>
+			</div>
+			<div class="option flex">
+				<a href="home.html"><div>Home</div></a>
+				<a href="about.html"><div>About</div></a>
+				<a href="contact.html"><div style="font-weight: 600;">Contact</div></a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="submit flex">
+		<div>
+			<p>We Want to Hear From You</p>
+			<p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+			<div style="text-align: center;margin-top: 4%;"><img src="images/contact-img.svg" alt=""></div>
+		</div>
+		<div>
+			<p>Contact us.</p>
+			<p>Full Name</p>
+			<input placeholder="Full Name"/>
+			<p>Student Number</p>
+			<input placeholder="Student Number"/>
+			<p>Email</p>
+			<input placeholder="Email"/>
+			<p>Message</p>
+			<textarea placeholder="Message"></textarea>
+			<div><button>Submit</button></div>
+		</div>
+	</div>
+	
+	<div class="location flex">
+		<div>
+			<p>Our Location.</p>
+			<p>Algonquin College Students' Association</p>
+			<p>Monday to Friday – 8:30am to 6:00pm</p>
+			<p>1385 Woodroffe Avenue (E114)</p>
+			<p>Ottawa, Ontario</p>
+			<p>K2G 1V8</p>
+			<p>(613) 727-4723 x7711</p>
+		</div>
+		<div>
+			<img src="images/map.png" style="width: 100%;" alt="">
+		</div>
+	</div>
+	
+	
+	<footer>
+		<div class="footer flex">
+			<div class="flex-box">
+				<p>Follow us</p>
+				<div class="flex">
+					<img src="icons/facebook.svg" alt="">
+					<img src="icons/instagram.svg" alt="">
+					<img src="icons/twitter.svg" alt="">
+					<img src="icons/youtube.svg" alt="">
+				</div>
+			</div>
+			
+			<div class="back" onclick="scrolltop()">
+				<img src="icons/arrow.svg" alt="">
+				<p>back to top</p>
+			</div>
+			<script>
+				function scrolltop(){
+					window.scrollTo({ top:0, behavior:"smooth"});
+				} 
+			</script>
+		</div>
+	</footer>
+</body>
+</html>

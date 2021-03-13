@@ -1,0 +1,284 @@
+/* this style sheet is used to create a template for the entire web page. */
+
+/* link all fonts to their own local file in folder */
+/* font 1 */
+@font-face {
+	font-family: Raleway-Bold;
+	src: url(../fonts/Raleway-Bold.ttf);
+}
+
+/* font 2 */
+@font-face {
+	font-family: Raleway-BoldItalic;
+	src: url(../fonts/Raleway-BoldItalic.ttf);
+}
+
+/* font 3 */
+@font-face {
+	font-family: Raleway-Light;
+	src: url(../fonts/Raleway-Light.ttf);
+}
+
+/* font 4 */
+@font-face {
+	font-family: Raleway-Medium;
+	src: url(../fonts/Raleway-Medium.ttf);
+}
+
+/* font 5 */
+@font-face {
+	font-family: Raleway-Regular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+/* font 6 */
+@font-face {
+	font-family: Raleway-SemiBold;
+	src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+/* font 7 */
+@font-face {
+	font-family: Raleway-SemiBoldItalic;
+	src: url(../fonts/Raleway-SemiBoldItalic.ttf);
+}
+
+
+/* make sure the whole body part has no gap on both left and right side */
+/* add a padding-top to pull the body part down a little. so that it won't obscured by navigation bar */
+body {
+	margin: 0;
+	padding-top: 9%;
+}
+
+/* hide the bottom line of link texts in navigation bar also change the color */
+a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+/* give a templat to all the element that need to hold in a block */
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ensure that text and buttons are displayed above the background image */
+.flex>.banner-left {
+	z-index: 1;
+}
+
+/* add a background color to separate the text from the background image */
+.flex>.banner-left>div {
+	background-color:  #ffffffc4;
+}
+
+/* mdify the whole block's size and position of the navigation bar placed at the top of the page */
+.title {
+	width: 90%;
+	padding: 0 5%;
+	top: 0;
+	height: 75px;
+	background-color: #3c3b3a;
+	position: fixed;
+	z-index: 3;
+}
+/* control the size of the logo in the navigation bar */
+.title>div>a>img {
+	width: 100%;
+	height: 100%;
+}
+
+/* set the position and spacing of links in the navigation bar */
+.option {
+	width: 14%;
+	padding: 0 2.5%;
+	align-items: center;
+}
+/* set the position and spacing of links in the navigation bar */
+.option>a>div {
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+
+/* the following effect is used to replace the original formatting when the viewing area of the window reaches the maximum of 800px */
+@media screen and (max-width: 800px) {
+	/* modify the width of the navigation bar and the gap on both sides */
+	.title {
+		width: 94%;
+		padding: 0 3%;
+	}
+
+	/* modify the width and position of links in the navigation bar */
+	.option {
+		width: 30%;
+		padding: 0 5%;
+	}
+}
+
+/* the following effect is used to replace the original formatting when the viewing area of the window reaches the maximum of 500px */
+@media screen and (max-width:500px) {
+	/* adjust the position of the main body to avoid being obscured by the navigation bar */
+	body {
+		padding-top: 50%;
+	}
+
+	/* make the navigation bar fill the width and adjust the height of the black background */
+	.title {
+		width: 100%;
+		padding: 0;
+		display: block;
+		padding-bottom: 25%;
+	}
+
+	/* fixed logo size */
+	.title>div>a>img {
+		height: 75px;
+	}
+
+	/* adjust the arrangement of links in the navigation bar to vertical */
+	.option {
+		width: 100%;
+		display: block;
+		text-align: center;
+		background-color: #3C3B3A;
+		padding: 0;
+	}
+
+	/* fix the spacing between links and the extra 10px gap on the right */
+	.option>a>div {
+		margin-bottom: 4%;
+		padding-right: 0px;
+	}
+
+	/* make the background image smaller */
+	.back>img{
+		width: 40%;
+	}
+
+	/* adjust the font size of the Back to Top button */
+	.back{
+		font-size: 9px;
+	}
+}
+
+/* set the background color of the footer and center the content */
+.footer {
+	position: relative;
+	background-color: #3C3B3A;
+	text-align: center;
+	height: 125px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Adjust the font, size, color and spacing of text with other elements */
+.flex-box>p {
+	font-family: Raleway-Regular;
+	font-size: 24px;
+	color: #F2F2F2;
+	margin: 0 0 10px 0;
+}
+
+/* set social icons position and animation effects */
+.flex-box>div>img {
+	padding: 0 5px;
+	animation-name: warn;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+	@keyframes warn {
+		100% {
+		transform: scale(0.9);
+		}
+	}
+
+/* I used a library of shaking effects for the back to top button animation */
+.back {
+	position: absolute;
+	right: 1%;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+	animation-name: shaky-slow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-play-state: running;
+}
+
+/* effect library of shaking (named shaky slow), continuous animation display is done by keyframes set in percentage.*/
+@-webkit-keyframes shaky-slow {
+	0% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	5% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	10% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	15% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	20% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	25% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	30% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	35% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	40% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	45% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	55% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	60% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	65% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	70% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	75% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	80% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	85% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	90% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	95% {
+		-webkit-transform: translate(0px, 1px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+}
+
+/* Set the font, size, color and position of the Back to Top button */
+.back>p {
+	font-family: Raleway-Regular;
+	font-size: 16px;
+	color: #f2f2f2;
+	margin: 5px 0;
+}

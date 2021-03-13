@@ -1,0 +1,361 @@
+/* slogan block */
+	/* whole part */
+	.banner {
+		padding-bottom: 6%;
+	}
+
+	/* text part */
+		/* whole part */
+			.banner-left {
+				width: 44%;
+			}
+
+			.banner-left>div {
+				width: 100%;
+				padding-left: 15%;
+			}
+
+		/* title */
+		.banner-left>div>p:nth-child(1) {
+			margin-bottom: 10px;
+		}
+
+		/* paragraph */
+		.banner-left>div>p:nth-child(2) {
+			margin-top: 0;
+		}
+
+	/* background image */
+	.banner-right {
+		width: 49%;
+	}
+
+/* "About" & "Services" banner */
+	.vague {
+		position: relative;
+		width: 100%;
+		height: 250px;
+	}
+
+	/* add green mask on these pictures */
+	.mask {
+		font-size: 72px;
+		font-family: Raleway-Bold;
+		color: #f2f2f2;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(38, 166, 130, 0.6);
+		justify-content: center;
+		align-items: center;
+	}
+
+	
+	/* link picture's local file here */
+	.work {
+		height: 100%;
+		background: url(../images/about.jpg) no-repeat;
+		background-position: center;
+	}
+	
+	/* link picture's local file here */
+	.coffee {
+		height: 100%;
+		background: url(../images/services.jpg) no-repeat;
+		background-position: center;
+		background-size: 100%;
+	}
+
+/* Who What Where */
+	/* whole part */
+		.introduce {
+			padding: 7% 5%;
+		}
+
+		.introduce>div {
+			width: 33%;
+			padding: 0 2%;
+		}
+	
+	/* title */
+	.introduce>div>p:nth-child(1) {
+		font-family: Raleway-BoldItalic;
+		font-size: 40px;
+	}
+
+	/* paragraph */
+	.introduce>div>p:nth-child(2) {
+		font-family: Raleway-Regular;
+		font-size: 18px;
+		line-height: 35px;
+	}
+
+/* "Need a break?" & "New year, new me" */
+	/* whole block */
+	.list-1 {
+		background-color: white;
+	}
+
+	/* picture of restaurant */
+	.list-1>div>div:nth-child(1) {
+		width: 50%;
+		height: 337px;
+		background: url(../images/bar.jpg) no-repeat;
+		background-position: 45% 50%;
+		background-size: 100%;
+	}
+
+	/* title */
+	.list-1>div>div:nth-child(2)>p:nth-child(1) {
+		font-family: Raleway-Bold;
+	}
+
+	/* picture of fitness */
+	.fitness {
+		background: url(../images/fitness.jpg) no-repeat;
+		background-position: 45% 45%;
+		background-size: 100%;
+	}
+
+/* "Competitive friends?" & "Indoor climbing?" */
+	/* whole block */
+	.list-2 {
+		background-color: #f2f2f2;
+	}
+	
+	/* title */
+	.list-2>div>div:nth-child(1)>p:nth-child(1) {
+		font-family: Raleway-Bold;
+	}
+
+	/* picture of bowling */
+	.list-2>div>div:nth-child(2) {
+		width: 50%;
+		height: 337px;
+		background: url(../images/bowling.jpg) no-repeat;
+		background-position: 45% 45%;
+		background-size: 100%;
+	}
+
+	/* picture of climbing */
+	.climbing {
+		background: url(../images/climbing.jpg) no-repeat;
+		background-position: 45% 62%;
+		background-size: 100%;
+	}
+
+/* subscribe bar */
+	/* whole block */
+	.Subscribe {
+		background-color: #3C3B3A;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5% 0;
+	}
+	
+	/* title */
+	.Subscribe>div:nth-child(1) {
+		font-family: Raleway-Medium;
+		font-size: 40px;
+		color: #F2F2F2;
+		margin-right: 50px;
+	}
+	
+	/* button */
+		/* normal */
+		.Subscribe>div:nth-child(2) {
+			font-family: Raleway-Bold;
+			background-color: #26A682;
+			border-radius: 30px;
+			color: #F2F2F2;
+			font-size: 27px;
+			padding: 7px 51px;
+			cursor: pointer;
+		}
+
+		/* clicked */
+		.Subscribe>div:nth-child(2):active {
+			color: #3C3B3A;
+		}
+/* special thanks */
+	/* whole block */
+	.trademark {
+		padding: 3% 0 7% 0;
+	}
+
+	/* title */
+	.trademark>p {
+		font-family: Raleway-Bold;
+		text-align: center;
+		font-size: 72px;
+	}
+
+	/* icons */
+		/* whole block */
+		.trademark>div {
+			width: 96%;
+			margin: 0 auto;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		/* icons size */
+		.trademark img {
+			width: 5%;
+		}
+
+/* the following effect is used to replace the original formatting when the viewing area of the window reaches the maximum of 800px */
+@media screen and (max-width: 800px) {
+	.banner-left {
+		width: 100%;
+	}
+
+	.banner-left>div {
+		width: 85%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.banner-right {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.banner-right img {
+		width: 100%;
+	}
+
+	.vague {
+		height: 200px;
+	}
+
+	.introduce {
+		display: block;
+		padding: 2% 7% 5% 7%;
+	}
+
+	.introduce>div {
+		width: 100%;
+		padding: 0;
+	}
+
+	.list-1>div {
+		display: flex;
+		align-items: center;
+		padding: 6% 7%;
+	}
+
+	.list-2>div {
+		display: flex;
+		align-items: center;
+		padding: 6% 7%;
+	}
+
+	.list-2>div>div:nth-child(2) {
+		position: initial;
+		background-size: 182% 100%;
+		width: 44%;
+		height: 374px;
+		margin-left: 3%;
+	}
+
+	.list-1>div>div:nth-child(1) {
+		background-size: 100% 100%;
+		width: 44%;
+		height: 374px;
+		margin-right: 3%;
+	}
+
+	.list-1>div>div:nth-child(2) {
+		padding: 0;
+		width: 75%;
+	}
+
+	.list-2 {
+		margin: 0;
+	}
+
+	.list-2>div>div:nth-child(1) {
+		padding: 0;
+	}
+
+	.Subscribe>div:nth-child(1) {
+		font-size: 24px;
+	}
+
+	.Subscribe>div:nth-child(2) {
+		padding: 7px 25px;
+	}
+
+	.fitness {
+		background-size: 190% 100% !important;
+	}
+
+	.climbing {
+		background-size: 258% 99% !important;
+	}
+
+	.trademark>div {
+		display: block;
+		text-align: center;
+	}
+
+	.trademark img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5%;
+	}
+}
+
+/* the following effect is used to replace the original formatting when the viewing area of the window reaches the maximum of 500px */
+@media screen and (max-width:500px) {
+
+	.list-1>div>div:nth-child(1),
+	.list-2>div>div:nth-child(2) {
+		display: none;
+	}
+
+	.list-1>div>div:nth-child(2),
+	.list-2>div>div:nth-child(1) {
+		width: 100%;
+	}
+
+	.list-2>div>div:nth-child(1) {
+		background-color: #F2F2F2;
+	}
+
+	.Subscribe {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-bottom: 5%;
+
+	}
+
+	.Subscribe>div:nth-child(1) {
+		font-size: 18px;
+		width: 100%;
+		margin: 0 auto;
+		letter-spacing: 0.5px;
+		margin: 5% 0;
+	}
+
+	.Subscribe>div:nth-child(2) {
+		font-size: 20px;
+		width: 140px;
+		height: 35px;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		outline: none;
+	}
+
+	.trademark img:nth-child(1) {
+		width: 86% !important;
+		height: 87px !important;
+	}
+}

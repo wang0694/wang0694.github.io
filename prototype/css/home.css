@@ -1,0 +1,502 @@
+/* "DiscoverYourARC" slogan part */
+	/* whole block */
+	.banner-left {
+		width: 40%;
+	}
+
+	/* add gap on left and change the width */
+	.banner-left>div {
+		width: 536px;
+		padding-left: 18%;
+	}
+
+	/* title */
+	.banner-left>div>p:nth-child(1) {
+		font-size: 72px;
+		font-weight: 600;
+		font-family: Raleway-Bold;
+		margin-bottom: 45px;
+	}
+
+	/* slogan */
+	.banner-left>div>p:nth-child(2) {
+		font-family: Raleway-Regular;
+		line-height: 32px;
+		font-size: 24px;
+		margin-bottom: 45px;
+	}
+
+	/* icons */
+	.banner-left>div>div {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	/* text of icons */
+	.banner-left>div>div p {
+		font-family: Raleway-Regular;
+		color: #26a682;
+		font-size: 16px;
+	}
+
+	/* "Get Started" button */
+	.banner-left>div>button {
+		font-family: Raleway-Bold;
+		font-size: 40px;
+		width: 340px;
+		height: 65px;
+		background-color: #26A682;
+		border: 0;
+		outline: none;
+		color: white;
+		border-radius: 40px;
+
+	}
+
+	/* click on the button to show the shadow */
+	.banner-left>div>button:active {
+		box-shadow: 0px 4px 15px #999;
+	}
+
+/*  background-img */
+	/*  */
+	.banner-right {
+		width: 57%;
+	}
+
+/* guide arrow under wide page */
+	/* posotion */
+	.scroll-bottom {
+		text-align: center;
+		padding-bottom: 2%;
+	}
+
+	/* text */
+	.scroll-bottom>p {
+		font-family: Raleway-Regular;
+		margin: 30px 0 5px 0;
+		font-size: 16px;
+	}
+
+	/* make the icon up side down */
+	.scroll-bottom>img {
+		transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		/* IE 9 */
+		-moz-transform: rotate(180deg);
+		/* Firefox */
+		-webkit-transform: rotate(180deg);
+		/* Safari 和 Chrome */
+		-o-transform: rotate(180deg);
+		/* Opera */
+	}
+
+/* "Discover Algonquin College" block */
+	/* whole block */
+		.list-1 {
+			background-color: #f2f2f2;
+			padding: 4%;
+		}
+		.list-1>div {
+			padding: 0 3%;
+		}
+
+	/* add picture */
+	.list-1>div>div:nth-child(1) {
+		width: 50%;
+		height: 337px;
+		background: url(../images/school.jpg) no-repeat;
+		background-position: 45% 72%;
+		background-size: 100%;
+	}
+
+	/* text block */
+		/* whole block */
+		.list-1>div>div:nth-child(2) {
+			position: relative;
+			width: 50%;
+			margin-left: 2%;
+		}
+
+		/* title */
+		.list-1>div>div:nth-child(2)>p:nth-child(1) {
+			font-family: Raleway-SemiBoldItalic;
+			font-size: 40px;
+			margin: 0;
+		}
+
+		/* Algonquin College */
+		.list-1>div>div:nth-child(2)>p:nth-child(2) {
+			font-family: Raleway-Regular;
+			font-size: 32px;
+			color: #26a682;
+			margin: 1% 0;
+		}
+
+		/* paragraph */
+		.list-1>div>div:nth-child(2)>p:nth-child(3) {
+			font-family: Raleway-Light;
+			font-size: 18px;
+			line-height: 35px;
+		}
+
+		/* button */
+			/* normal */
+			.list-1>div>div:nth-child(2)>button {
+				font-family: Raleway-Bold;
+				font-size: 27px;
+				width: 230px;
+				height: 45px;
+				background-color: #26A682;
+				border: 0;
+				outline: none;
+				color: white;
+				border-radius: 40px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+
+			/* clicked */
+			.list-1>div>div:nth-child(2)>button:active {
+				box-shadow: 0px 2px 12px #999;
+			}
+
+/* characters introduction block */
+	/* whole block */
+	.card {
+		background-color: #3C3B3A;
+		align-items: center;
+		padding: 2% 7%;
+		position: relative;
+	}
+
+	/* picture */
+	.card>img {
+		border: 5px solid #F2F2F2;
+		border-radius: 50%;
+		width: 175px;
+		height: 175px;
+		background: #f2f2f2;
+	}
+
+	/* name */
+	.card>p:nth-child(2) {
+		font-family: Raleway-SemiBold;
+		color: white;
+		width: 12%;
+		text-align: center;
+		font-size: 24px;
+		line-height: 35px;
+
+	}
+
+	/* introduction */
+	.card>p:nth-child(3) {
+		font-family: Raleway-Regular;
+		color: white;
+		width: 68%;
+		font-size: 24px;
+		line-height: 35px;
+	}
+
+
+/* "Discover Ther entertainment" block */
+	/* whole block */
+		.list-2 {
+			padding: 4%;
+			background-color: white;
+		}
+		.list-2>div {
+			padding: 0 3%;
+		}
+
+	/* text part */
+		/* whole block */
+		.list-2>div>div:nth-child(1) {
+			position: relative;
+			width: 54%;
+			margin-right: 2%;
+		}
+
+		/* title */
+		.list-2>div>div:nth-child(1)>p:nth-child(1) {
+			font-family: Raleway-SemiBoldItalic;
+			font-size: 40px;
+			margin: 0;
+		}
+
+		/* entertainment */
+		.list-2>div>div:nth-child(1)>p:nth-child(2) {
+			font-family: Raleway-Regular;
+			font-size: 32px;
+			color: #26a682;
+			margin: 1% 0;
+		}
+
+		/* paragraph */
+		.list-2>div>div:nth-child(1)>p:nth-child(3) {
+			font-family: Raleway-Light;
+			font-size: 18px;
+			line-height: 35px;
+		}
+
+		/* button */
+			/* normal */
+			.list-2>div>div:nth-child(1)>button {
+				font-family: Raleway-Bold;
+				font-size: 27px;
+				width: 230px;
+				height: 45px;
+				background-color: #26A682;
+				border: 0;
+				outline: none;
+				color: white;
+				border-radius: 40px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+
+			/* clicked */
+			.list-2>div>div:nth-child(1)>button:active {
+				box-shadow: 0px 2px 12px #999;
+			}
+
+	/* picture */
+	.list-2>div>div:nth-child(2) {
+		width: 50%;
+		height: 337px;
+		background: url(../images/entertainment.jpg) no-repeat;
+		background-position: 45% 47%;
+		background-size: 100%;
+	}
+
+/* Rewrite effect due to width change */
+@media screen and (max-width: 800px) {
+	.banner {
+		display: block;
+		padding-bottom: 1%;
+		margin-top: 7%;
+	}
+
+	.banner-left {
+		width: 100%;
+	}
+
+	.banner-left>div {
+		width: 85%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.banner-left>div>p:nth-child(1) {
+		margin: 30px 0 0 0;
+	}
+
+	.banner-left>div>p:nth-child(2),
+	.banner-left>div>p:nth-child(3) {
+		margin: 5px 0 25px 0;
+	}
+
+	.banner-left>div>div {
+		margin-bottom: 30px;
+	}
+
+	.banner-left>div>button {
+		display: block;
+		width: 310px;
+		margin: 0 auto;
+	}
+
+	.banner-right {
+		width: 100%;
+		text-align: center;
+		margin-top: 6%;
+	}
+
+	.banner-right img {
+		width: 46%;
+	}
+
+	.list-1 {
+		padding: 0;
+	}
+
+	.list-1>div {
+		display: block;
+		padding: 0;
+	}
+
+	.list-1>div>div:nth-child(1) {
+		width: 100%;
+		height: 200px;
+	}
+
+	.list-1>div>div:nth-child(2) {
+		position: relative;
+		width: 86%;
+		padding: 5% 7%;
+		margin: 0;
+	}
+
+	.list-1>div>div:nth-child(2)>button {
+		right: 8%;
+		bottom: 10%;
+	}
+
+	.card {
+		align-items: end;
+	}
+
+	.card>p:nth-child(2) {
+		position: absolute;
+		bottom: 17%;
+		width: 24%;
+	}
+
+	.card>p:nth-child(3) {
+		width: 61%;
+	}
+
+	.card>img {
+		margin-top: 4%;
+	}
+
+	.list-2 {
+		padding: 0;
+		position: relative;
+		margin-top: 200px;
+	}
+
+	.list-2>div {
+		display: block;
+		padding: 0;
+	}
+
+	.list-2>div>div:nth-child(2) {
+		width: 100%;
+		height: 200px;
+		position: absolute;
+		top: -59%;
+	}
+
+	.list-2>div>div:nth-child(1) {
+		position: relative;
+		width: 86%;
+		padding: 2% 7% 12% 7%;
+		margin: 0;
+	}
+
+	.list-2>div>div:nth-child(1)>button {
+		right: 8%;
+		bottom: 10%;
+	}
+}
+
+/* Rewrite effect due to width change */
+@media screen and (max-width:500px) {
+	.banner {
+		padding-bottom: 3%;
+	}
+
+	.banner-left>div>p:nth-child(1) {
+		font-size: 40px;
+	}
+
+	.banner-left>div>p:nth-child(2),
+	.banner-left>div>p:nth-child(3) {
+		font-size: 20px;
+	}
+
+	.banner-left>div>div {
+		flex-wrap: wrap;
+	}
+
+	.banner-left>div>div>div {
+		width: 40%;
+	}
+
+	.banner-left>div>button {
+		width: 300px;
+		height: 50px;
+		font-size: 32px;
+	}
+
+	.banner-right img {
+		width: 84%;
+	}
+
+	.scroll-bottom {
+		display: none;
+	}
+
+	.list-1>div>div:nth-child(2)>p:nth-child(1) {
+		font-size: 32px;
+	}
+
+	.list-1>div>div:nth-child(2)>p:nth-child(2) {
+		font-size: 24px;
+	}
+
+	.list-1>div>div:nth-child(2)>p:nth-child(3) {
+		font-size: 16px;
+	}
+
+	.list-1>div>div:nth-child(2) {
+		padding: 5% 7% 25% 7%;
+		background-color: #FFFFFF;
+	}
+
+	.list-1>div>div:nth-child(2)>button {
+		font-size: 20px;
+		width: 146px;
+		height: 45px;
+	}
+
+	.card {
+		display: block;
+		padding: 5% 7%;
+	}
+
+	.card>img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.card>p:nth-child(2) {
+		position: initial;
+		width: 100%;
+	}
+
+	.card>p:nth-child(3) {
+		width: 100%;
+	}
+
+	.list-2>div>div:nth-child(2) {
+		top: -44%;
+	}
+
+	.list-2>div>div:nth-child(1)>p:nth-child(1) {
+		font-size: 32px;
+	}
+
+	.list-2>div>div:nth-child(1)>p:nth-child(2) {
+		font-size: 24px;
+	}
+
+	.list-2>div>div:nth-child(1)>p:nth-child(3) {
+		font-size: 16px;
+	}
+
+	.list-2>div>div:nth-child(1) {
+		padding: 5% 7% 25% 7%;
+		background-color: #FFFFFF;
+	}
+
+	.list-2>div>div:nth-child(1)>button {
+		font-size: 20px;
+		width: 146px;
+		height: 45px;
+	}
+}
