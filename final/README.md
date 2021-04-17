@@ -6,7 +6,7 @@ Web Portfolio
 
 ###########Catalog Structure
 ├── Readme.md                   // help
-├──────────home.html            // Home Page
+├──────────index.html            // Home Page
 │   │──├───artbook.html         // ArtBook Page
 │   │──├───about.html           // About Page
 │   │──└───contact.html         // Contact Page
